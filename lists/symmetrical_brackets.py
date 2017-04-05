@@ -15,16 +15,16 @@ class BracketAnalyzer(object):
             raise Exception("No string passed in")
         elif len(bracket_string) == 2:
             if self.brackets_match(bracket_string):
-                return "YES"
+                print "YES"
             else:
-                return "NO"
+                print "NO"
         elif len(bracket_string) % 2 != 0:
-            return "NO"
+            print "NO"
         else:
             if self.brackets_match(bracket_string):
                 self.is_balanced(bracket_string[1:-1])
             else:
-                return "NO"
+                print "NO"
 
 
 if __name__ == "__main__":
