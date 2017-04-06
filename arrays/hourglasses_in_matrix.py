@@ -1,4 +1,6 @@
 """
+https://www.hackerrank.com/challenges/2d-array
+
 Given a 6 X 6 2D Array, A:
 
 1 1 1 0 0 0

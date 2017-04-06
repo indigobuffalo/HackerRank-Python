@@ -1,3 +1,19 @@
+# https://www.hackerrank.com/challenges/balanced-brackets
+
+br_map = {')': '(', ']': '[', '}': '{'}
+open_stack = []
+num = int(raw_input().strip())
+
+for i in num:
+    br_str = raw_input()
+    for i in br_str:
+        if br_map.get(br)
+
+
+
+
+
+
 """
 This solution is more verbose, but it is also faster since it 
 catches an unbalanced string at the first offending bracket 
@@ -28,11 +44,11 @@ class BracketAnalyzer(object):
 
         print("YES" if len(open_stack) == 0 else "NO")
 
-if __name__ == "__main__":
-    num = int(raw_input().strip())
-    for br_str in xrange(num):
-        br_str = raw_input().strip()
-        ba = BracketAnalyzer()
-        ba.balance_check(br_str)
+# if __name__ == "__main__":
+#     num = int(raw_input().strip())
+#     for br_str in xrange(num):
+#         br_str = raw_input().strip()
+#         ba = BracketAnalyzer()
+#         ba.balance_check(br_str)
 
 
