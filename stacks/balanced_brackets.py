@@ -1,24 +1,29 @@
 # https://www.hackerrank.com/challenges/balanced-brackets
 
-br_map = {')': '(', ']': '[', '}': '{'}
-open_stack = []
-num = int(raw_input().strip())
-
-for i in num:
-    br_str = raw_input()
-    for i in br_str:
-        if br_map.get(br)
-
-
-
-
-
-
 """
+SOLUTION 1
+"""
+
+br_map = {')': '(', ']': '[', '}': '{'}
+for i in xrange(int(raw_input())):
+    stack = []
+    for br in raw_input():
+        if stack and br_map.get(br) == stack[-1]:
+            stack.pop()
+        else:
+            stack.append(br)
+    print("YES" if len(stack) == 0 else "NO")
+
+    
+"""
+SOLUTION 2:
+
 This solution is more verbose, but it is also faster since it 
 catches an unbalanced string at the first offending bracket 
 rather than requiring that the entire string always be read.
 """
+
+
 class BracketAnalyzer(object):
     def balance_check(self, br_str):
         opening = ["(", "[", "{"]
